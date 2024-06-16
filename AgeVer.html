@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Age Verification</title>
+  <style>
+    body {
+      background-color: #6000A0;
+      background-image: linear-gradient(to bottom, #6000A0 0%, #9A72AC 100%);
+      background-repeat: repeat-x;
+    }
+  </style>
+</head>
+<body>
+  <div id="age-verify">
+    <div class="window">
+      <span class="title">You must be 18 years old to enter this website.</span>
+      <input type="hidden" name="age" value="18">
+      <input type="checkbox" id="consent" required>
+      <label for="consent">I agree to the terms and conditions</label>
+      <button class="yes" onclick="overAge()">Yes</button>
+      <button class="no" onclick="underAge()">Less Than 18</button>
+    </div>
+  </div>
+
+  <script>
+    function overAge() {
+      // Hide the age verification window and redirect the user to the homepage.
+      document.getElementById("age-verify").classList.add("hidden");
+      window.location.href = "/";
+    }
+
+    function underAge() {
+      // Redirect the user to search-18.html.
+      window.location.href = "search-18.html";
+    }
+
+    // Make the consent checkbox required by adding a required attribute to the input field.
+    document.getElementById("consent").setAttribute("required", "");
+  </script>
+</body>
+</html>
