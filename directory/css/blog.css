@@ -5,7 +5,7 @@ Author: Templates On Web
 Author URI: http://templateonweb.com/
 Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
 */
-/*********************about****************/
+/*********************blog****************/
 .center_about{
  background-image: url(../img/25.jpg);
  }
@@ -14,43 +14,25 @@ Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152
   padding-top:80px;
   padding-bottom:80px;
  }
-#directory{
-padding-top:40px;
-padding-bottom:40px; 
- }
-#about_page{
+#blog{
+background:#f4f4f4;
 padding-top:40px;
 padding-bottom:40px;
-background: #151f31; 
  }
-.about_page_1 .col-sm-2{
- border-right:1px solid #21314e;
- }
-#business{
- background:#f4f4f4;
- padding-top:40px;
- padding-bottom:40px;
- }
-.business_1i{
+.blog_1{
 background:#fff;
-padding:20px 15px;
-box-shadow: 0 0 10px rgba(0,0,0,0.6); 
+padding:20px 5px 20px 5px;
+box-shadow: 0 0 10px rgba(0,0,0,0.6);
+margin-top:20px; 
  }
-/*********************about_end****************/
+/*********************blog_end****************/
 
 @media screen and (max-width : 767px){
-#directory{
+#blog{
 text-align:center; 
  }
-.directory_1r {
+.blog_1r {
 margin-top:10px; 
- }
-.about_page_1i {
-margin-top:10px; 
- }
-.business_1i {
-text-align:center;
-margin-bottom:15px; 
  }
 }
 
